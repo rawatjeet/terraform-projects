@@ -7,25 +7,6 @@ terraform {
   }
 }
 
-# Access key variable 
-variable "aws-access-key" {
-  default = "your_access_key"
-}
-
-# Secret key variable 
-variable "aws-secret-key" {
-  default = "your_secret_key"
-}
-
-# Region variable
-variable "aws-region" {
-  default = "us-east-2"
-}
-
-variable "local_directory" {
-  default = "./html/"
-}
-
 # provider with access key
 provider "aws" {
   access_key 	= "${var.aws-access-key}"
